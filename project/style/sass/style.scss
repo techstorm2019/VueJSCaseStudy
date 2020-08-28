@@ -1,0 +1,119 @@
+$bg-color:      #efefef;
+$brand-color-8: #282828;
+$brand-color-1: #72c3dc;
+$white:         #ffffff;
+$black:         #000000;
+$color-1:       #6f98a8;
+$color-2:       #2b8ead;
+$color-3:       #2f454e;
+$color-4:       $color-2;
+$color-5:       $color-3;
+$color-6:       #bfbfbf;
+$color-7:       $color-6;
+$color-8:       #6f98a8;
+$color-9:       $color-3;
+
+$breakpoint-tablet: 768px;
+$min-width:         375px;
+
+* {
+  box-sizing: border-box;
+}
+
+#app {
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  color: #282828;
+}
+.bottom-section {
+  padding: 1.6rem;
+  @media (min-width: $min-width) and (max-width: $breakpoint-tablet) {
+    padding: 0;
+  }
+}
+.page-container {
+  padding: 1.6rem;
+  background-color: $bg-color;
+  display:  flex;
+  .left-col {
+    width: 70%;
+  }
+  .right-col {
+    width: 30%;
+    text-align: center;
+    @media (min-width: $min-width) and (max-width: $breakpoint-tablet) {
+      display: none;
+    }
+  }
+  @media (min-width: $min-width) and (max-width: $breakpoint-tablet) {
+    background-color: $white;
+    display: block;
+    padding: 0.8rem;
+    .left-col,.right-col {
+      width: 100%;
+    }
+  }
+}
+.block-container {
+  .box {
+    width: 32%;
+    display: inline-block;
+    .number {
+      font-size: 5rem;
+      color: $white;
+    }
+  }
+  div[class^="box-"] {
+    padding: .8rem;
+    text-align: center;
+    @media (min-width: $min-width) and (max-width: $breakpoint-tablet) {
+      background-color: $bg-color;
+    }
+  }
+
+  @media (min-width: $min-width) and (max-width: $breakpoint-tablet) {
+    .box {
+      width: 100%;
+      display: block;
+      padding-left: 0.4rem;
+      border-bottom: 2px solid $white;
+      .number {
+        font-size: 1rem;
+        color: $black;
+      }
+    }
+  }
+}
+
+.btn-grp {
+  text-align: center;
+  .btn {
+    width: 100%;
+    text-align: center;
+    background-color: $brand-color-1;
+    border-radius: 14px;
+    border: none;
+    color: $white;
+    padding: 0.8rem 1.2rem;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-bottom: 2px solid $color-2;
+    margin-bottom: 0.8rem;
+  }
+}
+
+.top-section {
+  display: none;
+  @media (min-width: $min-width) and (max-width: $breakpoint-tablet) {
+    display: block;
+    .btn-grp {
+      display: block;
+      text-align: center;
+      .btn {
+        width: 30%;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box; }
+
+#app {
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  color: #282828; }
+
+.bottom-section {
+  padding: 1.6rem; }
+  @media (min-width: 375px) and (max-width: 768px) {
+    .bottom-section {
+      padding: 0; } }
+
+.page-container {
+  padding: 1.6rem;
+  background-color: #efefef;
+  display: flex; }
+  .page-container .left-col {
+    width: 70%; }
+  .page-container .right-col {
+    width: 30%;
+    text-align: center; }
+    @media (min-width: 375px) and (max-width: 768px) {
+      .page-container .right-col {
+        display: none; } }
+  @media (min-width: 375px) and (max-width: 768px) {
+    .page-container {
+      background-color: #ffffff;
+      display: block;
+      padding: 0.8rem; }
+      .page-container .left-col, .page-container .right-col {
+        width: 100%; } }
+
+.block-container .box {
+  width: 32%;
+  display: inline-block; }
+  .block-container .box .number {
+    font-size: 5rem;
+    color: #ffffff; }
+.block-container div[class^="box-"] {
+  padding: .8rem;
+  text-align: center; }
+  @media (min-width: 375px) and (max-width: 768px) {
+    .block-container div[class^="box-"] {
+      background-color: #efefef; } }
+@media (min-width: 375px) and (max-width: 768px) {
+  .block-container .box {
+    width: 100%;
+    display: block;
+    padding-left: 0.4rem;
+    border-bottom: 2px solid #ffffff; }
+    .block-container .box .number {
+      font-size: 1rem;
+      color: #000000; } }
+
+.btn-grp {
+  text-align: center; }
+  .btn-grp .btn {
+    width: 100%;
+    text-align: center;
+    background-color: #72c3dc;
+    border-radius: 14px;
+    border: none;
+    color: #ffffff;
+    padding: 0.8rem 1.2rem;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-bottom: 2px solid #2b8ead;
+    margin-bottom: 0.8rem; }
+
+.top-section {
+  display: none; }
+  @media (min-width: 375px) and (max-width: 768px) {
+    .top-section {
+      display: block; }
+      .top-section .btn-grp {
+        display: block;
+        text-align: center; }
+        .top-section .btn-grp .btn {
+          width: 30%;
+          margin-bottom: 0; } }
+
+/*# sourceMappingURL=style.css.map */
